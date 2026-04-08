@@ -2,40 +2,140 @@
 
 <html lang="es">
     <head>
-    <!--Se ingresan los metadatos de la pagina -->
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Se le da un titulo a la pagina-->
+    <link rel="icon" type="jpg" href="./public/icons/favicon.jpeg">
     <title>Portafolio</title>
     <link rel="stylesheet" href="src/css/styles.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-    <body>
-        <!--Se le da nombre al encabezado de la pagina-->
-        <header>
-        <a href="">AndMe26</a>  
-            
-            <nav>
-                <a href="#" class="active">Inicio</a>
-                <a href="">Proyectos</a>
-                <a href="">Contactos</a>
-                <a class= "link" href="mascotas.html">Mascotas</a>
+<body>
+           
+    <header>
+        <a href="">AndMe26</a>
+        <hr>    
+        <nav>
+            <a href="#" class="active"> Inicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            <a class= "link" href="mascotas.html">Mascotas</a>
             </nav>
-        </header>
+    </header>
 
+    <!-- sobre mi -->
+    <section id="inicio" class="home">
+        <div class="imagen-de-inicio">
+            <img src="./public/icons/Foto.jpg" alt="foto del programador">
+        </div>
+        <div class="contenido-de-inicio">
+            <h1>Hola, soy <span> Andres </span> </h1>
+            <h3 class="texto">yo soy<span></span> </h3>
+            <p>Soy un programador apasionado por crear soluciones digitales eficientes, escalables y centradas en la experiencia del usuario con mi conocimiento tengo unas buenas prácticas de código con un enfoque creativo para resolver problemas reales. siempre estoy al tanto para  adaptárme a nuevas tecnologías y aprendiendo constantemente para mantenerme actualizado. Mi objetivo es construir productos que no solo funcionen bien, sino que también generen impacto y valor para quienes los utilizan.</p>
+            <br>
+            <div class="iconos-de-redes-sociales">
+                <a href="https://github.com/AndMe26" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/n1ghtd4rk/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
 
-            <section class="Inicio">
-                <div class="imagen-de-inicio">
-                    <img>
-                </div>
-            </section>    
-    </body>
+    </section>
 
     
-           
+    <section id="proyectos" class="projects">
+        <h2>Proyectos</h2>
+        <div class="contenido-de-proyectos">
+
+            <!-- proyecto 1 -->
+            <div class="card proyect">
+                <div class="project-img">
+                    <img src="./public/Img/cajero.jpg" alt="proyecto 1">
+                    <div class="project-info">
+                        <h4>Simulador de cajero automatico en consola</h4>
+                        <p>Un simulador hecho en visual Studio Code el cual replica el funcionamiento de un cajero automatico.</p>
+                        <span>Lenguajes usados:</span>
+                        <ul class="lenguajes">
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AndMe26/SimuladorDeCajeroAutomatico.git" target="_blank"><i class="fab fa-github"> </i>Codigo </a>
+                    </div>
+                </div>    
+            </div>
+            
+            
+
+            <!-- proyectos 2 -->
+            <div class="card proyect">
+                <div class="project-img">
+                    <img src="./public/Img/2897785.png" alt="proyecto 2">
+                    <div class="project-info">
+                        <h4>Simulador de Registro de productos en un inventario en consola</h4>
+                        <p>Un simulador hecho en visual Studio Code el cual replica el funcionamiento de un sistema de registro de productos en un inventario.</p>
+                        <span>Lenguajes usados:</span>
+                        <ul class="lenguajes">
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AndMe26/InventarioRiwi.git" target="_blank"><i class="fab fa-github"> </i>Codigo </a>
+                    </div>
+                </div>    
+            </div>
+                
+
+            <!-- proyecto 3 -->
+            <div class="card proyect">
+                <div class="project-img">
+                    <img src="./public/Img/videojuegos.jpg" alt="proyecto 3">
+                    <div class="project-info">
+                        <h4>Simulador de registro de videojuegos en consola</h4>
+                        <p>Un simulador hecho en visual Studio Code el cual usando el Formato CRUD se puede registrar,buscar,eliminar,actualizar,mostrar videojuegos en consola.</p>
+                        <span>Lenguajes usados:</span>
+                        <ul class="lenguajes">
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/AndMe26/Coleccion-de-videojuegos.git" target="_blank"><i class="fab fa-github"> </i>Codigo </a>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </section>
 
 
-     
+
+    <section id="contacto">
+        <h2>Contactame</h2>
+        <form action="" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="telefono">telefono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" rows="4" name="mensaje" required></textarea><br><br>
+            <button type="submit" >Enviar</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p> &copy; 2026 Andres Mena - Todos los derechos reservados</p>
+            <div class="iconos-de-redes-sociales">
+                <a href="https://github.com/AndMe26" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/n1ghtd4rk/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="URL_DE_TU_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
 
 
